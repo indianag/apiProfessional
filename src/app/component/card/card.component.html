@@ -1,0 +1,22 @@
+<div [ngClass]="{'even-card': even, 'odd-card': !even}">
+<div class="card">
+    <h4>Grandes Profesionales</h4>
+    <p>Nombre: {{ datosProfessional.firstName }}</p>
+    <p>Apellido: {{ datosProfessional.lastName }}</p>
+    <p>Edad: {{ datosProfessional.age }}</p>
+    <p>Peso: {{ datosProfessional.weight }}</p>
+    <p>Altura: {{ datosProfessional.height }}</p>
+    <p>Esta Retirado: {{ datosProfessional.isRetired }}</p>
+    <p>Nacionalidad: {{ datosProfessional.nationality }}</p>
+    <p>Numero de Oscares: {{ datosProfessional.oscarsNumber }}</p>
+    <p>Profesion: {{ datosProfessional.profession }}</p>
+    <button class="btnX" type="button" (click)="eliminarTarjeta(datosProfessional)">Eliminar</button>
+</div>
+</div>
+
+
+
+
+
+
+<!-- <button class="btnX" type="button" (click)="eliminarTarjeta(datosBook)">X</button> -->

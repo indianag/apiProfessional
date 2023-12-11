@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link{
+    /* border: 3px solid red; */
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+    column-gap: 20px;
+   
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    
+}

@@ -1,0 +1,21 @@
+<div class="bienvenido">
+    <div class="form-body">
+        <p class="text">Modificar datos de un Profesional</p>
+        <form  class="login-form">
+            <input type="text" #firstName  placeholder="nombre" />
+            <input type="text" #lastName  placeholder="apellido" />
+            <input type="text" #age  placeholder="edad" />
+            <input type="text" #weight  placeholder="peso" />
+            <input type="text" #height  placeholder="altura" />
+            <input type="text" #isRetired  placeholder="Es retirado?" />
+            <input type="text" #nationality  placeholder="Nacionalidad" />
+            <input type="text" #oscarsNumber  placeholder="numero de Oscares" />
+            <input type="text" #profession  placeholder="Profesion" />
+            <button (click)="updateProfessional(firstName.value, lastName.value, age.value, weight.value, height.value, isRetired.checked, nationality.value, oscarsNumber.value, profession.value)" type="button">Modificar</button>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- <button (click)="addBook(title.value, type.value, author.value, price.value, photo.value)" type="button">Añadir profesional</button> -->

@@ -1,0 +1,15 @@
+<div class="bienvenido">
+    <div class="form-body">
+        <p class="text">Buscar un Profesional</p>
+        <form  class="login-form">
+            <input type="text" [(ngModel)]="firstName" name="firstName" placeholder="nombre" />
+            <input type="text" [(ngModel)]="lastName" name="lastName" placeholder="apellido" />
+            <button  type="button" (click)="searchProfessionalByName()">Mostrar</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<!-- <button type="submit"(click)="searchBookById()" class="btn">Buscar</button -->

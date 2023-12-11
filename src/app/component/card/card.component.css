@@ -1,0 +1,71 @@
+
+.even-card{
+    background-color: rgba(255, 255, 255, 0.815);
+    width: 250px;
+    height: 580px;
+}
+.odd-card{
+    background-color: rgba(37, 6, 73, 0.664);
+    width: 250px;
+    height: 580px;
+}
+.card{
+    /* border: 3px solid green; */
+    width: 250px;
+    height: 480px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(170, 27, 27, 0);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+
+}
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(54, 235, 123, 0.2);
+}
+.card img{
+    width: 250px;
+    height: 220px;
+}
+.card h4{
+    font-weight: 400;
+    color: yellow;
+}
+.card h2{
+    font-weight: 600;
+}
+
+.card p{
+    
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+/* .btn{
+   
+    background-color: rgba(203, 206, 37, 0.747);
+    border: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(216, 219, 9);
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} */
+/* .btn:hover{
+    background-color:rgb(57, 10, 91);
+    color: white;
+
+} */
+.btnX{
+   position: fixed;
+    background-color: rgba(218, 214, 18, 0.616);
+    border: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
