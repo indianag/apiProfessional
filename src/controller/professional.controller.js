@@ -8,11 +8,11 @@ function consultarProfesional(request, response)
   const {firstName, lastName} = request.query;
 
   Professional.findOne({firstName, lastName})
-  .then((professional) => {
-    if(!professional) {
+  .then((professionals) => {
+    if(!professionals) {
       return response.send({error: 'Profesional no encontrado'});
     }
-    response.send(professional);
+    response.send([professionals]);
    
   })
   .catch((error) => {
@@ -100,6 +100,7 @@ function eliminarProfessional(request, response)
   .then((profesional) => {
     if(!profesional){
       console.error('No se encontró ningun profesional con el nombre proporcionado');
+      return response.status(404).json({ message: 'No se encontró ningún profesional con el nombre proporcionado' });
     }
 
     console.log('Profesional eliminado con exito');
@@ -107,6 +108,7 @@ function eliminarProfessional(request, response)
   })
   .catch((error) => {
     console.log(error);
+    response.status(500).json({ message: 'Error al eliminar el profesional' });
 
   });
 }
