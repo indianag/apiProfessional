@@ -1,5 +1,6 @@
 const app = require('./app')
-require('./database')
+require('./database');
+const cors = require('cors')
 
 
 

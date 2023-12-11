@@ -1,4 +1,5 @@
 const Professional = require('../model/profesionalMDB');
+const {ProfessionalResponse} = require('../model/professionalResponse')
 
 
 function consultarProfesional(request, response)
@@ -24,10 +25,13 @@ function getAllProfessionals(request, response)
 {
   Professional.find()
   .then((professionals) => {
-    response.send(professionals);
+    const professionalResponse = new ProfessionalResponse(false, 200, 'Success', professionals);
+    response.send(professionalResponse);
   })
   .catch((error) => {
     console.log(error)
+    const errorResponse = new ProfessionalResponse(true, 500, 'Error', []);
+    response.status(500).send(errorResponse);
   })
 }
 

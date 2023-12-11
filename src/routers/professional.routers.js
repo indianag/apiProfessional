@@ -1,6 +1,7 @@
 const {Router} = require ("express")
 const router = Router()
 const professionalCtrl = require ('../controller/professional.controller');
+const cors = require('cors')
 
 
 router.get('/professional', professionalCtrl.consultarProfesional);
